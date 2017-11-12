@@ -1,0 +1,24 @@
+h1{
+    font-family: Courier;
+    color: blue;
+    text-align:center;
+}
+#intro {
+    text-align:center;
+}
+body{
+     font-family: Courier;
+}
+ul {
+     list-style-type: none;
+     margin: 10px;
+     padding: 0;
+}
+
+#vids li {
+    display: inline-block
+}
+
+.large {
+    font-size: 25px;
+}
