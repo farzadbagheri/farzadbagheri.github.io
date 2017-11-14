@@ -19,8 +19,9 @@ ul {
     padding: 40px;
 }
 
-#music {
-    text-align: center;
+.nav-tabs > li {
+    font-size: 22px;
+    padding-left: 40px;
 }
 
 #bio {
