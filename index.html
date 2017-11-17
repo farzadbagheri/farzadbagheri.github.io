@@ -3,22 +3,79 @@
         <head>
             <link rel="stylesheet" type="text/css" href="index.css">
             <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+            <link href="https://fonts.googleapis.com/css?family=Arvo|Cabin|Josefin+Sans|Nunito|Pacifico|Poppins|Raleway|Sumana" rel="stylesheet">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         </head> 
-        <h1>Farzad Bagheri</h1>
-        <h3 id="intro"> this page, along with my career, is currently under development! </h3>
-        <h3> Some programming projects: </h3>
-        <ul>
-            <li><h2><b><a target="_blank" href= "https://farzadbagheri.github.io/weatherfinder">Weather Finder (ReactJS)</a></b><a target="_blank" href="https://github.com/farzadbagheri/weatherfinder"> -> (source)</a></h2></li>
-            <li><h2><b>forNow (JavaScript + Python)</b><a target="_blank" href="https://github.com/neisfelder/forNow"> -> (source)</a></h2></li>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #def7ff;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Farzad Bagheri</a>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#proj" role="tab">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#mus" role="tab">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#vid" role="tab">Videos</a>
+          </li>
         </ul>
-        <br />
-        <h3> I also like to make <a target="_blank" href="https://soundcloud.com/farzad-b/track"><span class="large"><em>music</em></span></a></h3>
-        <h3> I helped make this track </h3>
-        <iframe src="https://open.spotify.com/embed/album/5u3MfTZBWhTzXRaof0UaB3" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-        <h3> Video projects I acted in and co-directed: </h3>
-        <ul id="vids">   
-            <li><h2>Expert Town</h2><iframe width="300" height="168.5" src="https://www.youtube.com/embed/z9Ce20fhxkY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></li>
-            <li><h2>Here Comes the Boom!</h2><iframe width="300" height="168.5" src="https://www.youtube.com/embed/1ZltZ2q9tos?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></li>
-        </ul>
+        </nav>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="prof" role="tabpanel">
+                <div id="bio">
+                    <br />
+                    <img src="selfpic.png" hspace="20px" />
+                    <p> I'm an aspiring developer with a passion for human-computer interaction and a hunger to learn every day. I'm currently working as a Front End Developer intern for a company called <a target='_blank' href="https://inflect.com/">Inflect</a> where I am designing multiple internal and external UIs in React. </p>
+                    <p>Thanks for visiting my site. I'd love to chat, so here are some ways you can contact me:</p>
+                    <ul align="left">
+                        <li><a target='_blank' href="https://www.linkedin.com/in/farzad-bagheri-787154a9/">LinkedIn</a></li>
+                        <li>email: fbagheri@scu.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="vid" role="tabpanel">
+                <div id="videos">
+                    <br />
+                    <h3 style="padding-left: 10px"> Video projects I acted in and co-directed: </h3>
+                    <br />
+                    <ul id="vids">   
+                        <li><h2>Expert Town</h2><iframe width="450" height="252.75" src="https://www.youtube.com/embed/z9Ce20fhxkY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></li>
+                        <li><h2>Here Comes the Boom!</h2><iframe width="450" height="252.75" src="https://www.youtube.com/embed/1ZltZ2q9tos?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="proj" role="tabpanel">
+                <div id="projects">
+                    <br />
+                    <h3> Some programming projects: </h3>
+                    <br />
+                    <ul>
+                        <li><h2><b><a target="_blank" href= "https://farzadbagheri.github.io/weatherfinder">Weather Finder (ReactJS)</a></b>  -> <a target="_blank" href="https://github.com/farzadbagheri/weatherfinder"> (source)</a></h2></li>
+                        <p>a simple ReactJS component that uses weather.org api to find weather in different zip codes</p>
+                        <br />
+                        <li><h2><b>forNow (JavaScript + Python + SQL)</b> -> <a target="_blank" href="https://github.com/neisfelder/forNow"> (source)</a></h2></li>
+                        <p>an in-progress web app for a more intuitive approach to planning and organizing events and goals</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="mus" role="tabpanel">
+                <div id="music">
+                    <br />
+                    <h3 style="padding-left: 10px"> Songs I have written and collaborated on: </h3>
+                    <ul id="vids" style="padding: 25px">   
+                        <li><h2>Star by Me</h2><iframe width="115%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/312081362&amp;color=%23829bba&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe></li>
+                        <li><h2>San Jose by Riley McShane</h2><iframe src="https://open.spotify.com/embed?uri=spotify:track:2fNSwM4ZwOEtxjTxmYq08m&view=coverart&theme=white" width="350" height="380" frameborder="0"></iframe> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
     </body>
 </html>
