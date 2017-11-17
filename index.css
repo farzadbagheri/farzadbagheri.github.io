@@ -2,12 +2,19 @@ h1{
     color: blue;
     text-align:center;
 }
+
+h3 {
+  padding-left: 10px;
+}
+
 #intro {
     text-align:center;
 }
+
 body{
      font-family: 'Raleway', sans-serif;
 }
+
 ul {
      list-style-type: none;
      margin: 10px;
@@ -55,9 +62,5 @@ p {
  text-align: left; 
  padding-right: 15px;
  padding-top: 15px;  
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> 6f78a032a2d81983af945157fe908a7291226ee5
