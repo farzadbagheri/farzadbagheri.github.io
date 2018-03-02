@@ -24,6 +24,12 @@ ul {
 #vids li {
     display: inline-block;
     padding: 40px;
+    padding-left: 5%;
+}
+
+#vids1 li {
+    display: inline-block;
+    padding: 72px;
 }
 
 .nav-tabs > li {
@@ -51,16 +57,34 @@ ul {
     margin: 8px 0;
 }
 
-img {
+#selfie {
     width: 250px;
     height: 250px;
     border-radius: 40px;
     float: left;
 }
 
+#project1 {
+  margin: auto;
+  width: 500px;
+  margin-left: 30%;
+  height: 282px;
+  border-radius: 20px;
+}
+#project2 {
+  margin: auto;
+  width: 495px;
+  height: 507px;
+  margin-left: 30%;
+  border-radius: 20px;
+}
+
 p {
  text-align: left; 
  padding-right: 15px;
  padding-top: 15px;  
+}
+
+.info {
 }
 
