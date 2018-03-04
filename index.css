@@ -40,6 +40,7 @@ ul {
 #bio {
     text-align: center;
     font-size: 18px;
+    padding-left: 15%;
 }
 
 .large {
@@ -59,10 +60,11 @@ ul {
 }
 
 #selfie {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     border-radius: 40px;
     float: left;
+    margin-top: 20px;
 }
 
 #project1 {
@@ -89,10 +91,17 @@ p {
 .info {
   font-size: 18px;
 }
+#personal {
+  width: 80%;
+  padding-left: 280px;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
     #bio {
       font-size:36px;
@@ -100,7 +109,12 @@ p {
       clear: left;
     }
     #selfie {
-      float: center;
+      float: none;
     }
+    #personal {
+      width: 100%;
+      padding-left: 35px;
+  }
 }
+
 
