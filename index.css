@@ -93,8 +93,10 @@ ul {
   border-radius: 20px;
 }
 #mainpic {
-  width: 200px;
-  height: 200px;
+  margin-left: -25;
+  width: 900px;
+  height: 675px;
+  border-radius: 2px;
 }
 
 p {
