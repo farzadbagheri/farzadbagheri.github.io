@@ -23,11 +23,11 @@ html > body{
 }
 
 div > h3 {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 div > ul > li > h2 {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 ul {
@@ -117,7 +117,6 @@ p {
 }
 #personal {
   width: 80%;
-  padding-left: 280px;
   background-color: #d3d3d3;
   border-radius: 10px;
   padding-bottom: 10px;
