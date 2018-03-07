@@ -135,6 +135,15 @@ a.nav-link {
 
 }
 
+footer {
+  position: absolute;
+    text-align: right;
+    left: 86%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
+}
+
 
 @media only screen 
   and (min-device-width: 375px) 
