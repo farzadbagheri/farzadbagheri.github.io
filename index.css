@@ -58,7 +58,7 @@ ul {
 #bio {
     text-align: center;
     font-size: 18px;
-    padding-left: 15%;
+    margin: 0;
 }
 
 .large {
@@ -120,6 +120,8 @@ p {
   background-color: #d3d3d3;
   border-radius: 10px;
   padding-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #main2 {
