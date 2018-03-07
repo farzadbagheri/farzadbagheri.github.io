@@ -11,15 +11,24 @@ h3 {
     text-align:center;
 }
 
-body{
-     font-family: 'Raleway', sans-serif;
+html > body{
+  font-family: 'Raleway Dots', cursive;
+
 }
+
+.navbar-brand {
+  font-family: 'Bungee Shade', cursive;
+
+}
+
+
 
 ul {
      list-style-type: none;
      margin: 10px;
      padding: 0;
 }
+
 
 #vids li {
     display: inline-block;
@@ -35,6 +44,8 @@ ul {
 .nav-tabs > li {
     font-size: 22px;
     padding-left: 40px;
+    font-family: 'Bungee Outline', cursive;
+
 }
 
 #bio {
@@ -98,6 +109,7 @@ p {
   border-radius: 10px;
   padding-bottom: 10px;
 }
+
 
 @media only screen 
   and (min-device-width: 375px) 
