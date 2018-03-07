@@ -1,10 +1,12 @@
 h1{
-    color: blue;
+    color: black;
     text-align:center;
+    font-weight: bold;
 }
 
 h3 {
   padding-left: 10px;
+  font-weight: bold;
 }
 
 #intro {
@@ -20,8 +22,6 @@ html > body{
   font-family: 'Bungee Shade', cursive;
 
 }
-
-
 
 ul {
      list-style-type: none;
@@ -45,7 +45,7 @@ ul {
     font-size: 22px;
     padding-left: 40px;
     font-family: 'Bungee Outline', cursive;
-
+    color: black;
 }
 
 #bio {
@@ -92,6 +92,10 @@ ul {
   margin-left: 30%;
   border-radius: 20px;
 }
+#mainpic {
+  width: 200px;
+  height: 200px;
+}
 
 p {
  text-align: left; 
@@ -108,6 +112,11 @@ p {
   background-color: #d3d3d3;
   border-radius: 10px;
   padding-bottom: 10px;
+}
+
+a.nav-link {
+  color: #000000;
+
 }
 
 
