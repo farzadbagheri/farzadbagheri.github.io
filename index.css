@@ -13,10 +13,7 @@ h3 {
     text-align:center;
 }
 
-#nav2 {
-  text-align: center;
-  display: none;
-}
+
 
 html > body{
   font-family: 'Raleway Dots', cursive;
@@ -202,6 +199,11 @@ margin-left: 5%;
   display: inline-block;
     padding: 2%;
     margin: auto;
+}
+
+#nav2 {
+  text-align: center;
+  visibility: hidden;
 }
 
 #button {
