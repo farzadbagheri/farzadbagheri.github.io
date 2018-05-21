@@ -14,9 +14,8 @@
     <body>
         <script>
         var menuOpen = false;
-    window.addEventListener('click touchstart', function(e){   
-      console.log(!document.getElementById('nav2').contains(e.target));
-      console.log(menuOpen);
+    window.addEventListener('click', function(e){   
+    
       if (!document.getElementById('nav2').contains(e.target) && menuOpen || 
             document.getElementById('nav2').contains(e.target)){
         menuOpen = false;
@@ -44,8 +43,8 @@
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #FFFFFFF;">
         
         <a class="navbar-brand" href="index.html" id="name">Farzad Bagheri</a>
-        <div id="button">&#x2630;</div>
-        <div id="exit">x</div>
+        <button id="button">&#x2630;</button>
+        <button id="exit">x</button>
 
         <ul class="nav nav-tabs" role="tablist" id="tabs">
           <li class="nav-item">

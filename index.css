@@ -214,11 +214,11 @@ margin-left: 5%;
 #button {
       clear: right;
       font-size:45px;
-      padding-right: 5px;
-      padding-top: 10px;
+      padding-bottom: 0px;
       display: block;
-      margin-left: 48%;
-      margin-top: 0;
+      margin-left: 20%;
+      margin: auto;
+      height: 80px;
     }
     #exit {
       background-color: black;
