@@ -16,8 +16,9 @@ h3 {
 
 
 html > body{
-  font-family: 'Raleway Dots', cursive;
-  font-weight: bold;
+  font-family: 'Raleway', cursive;
+  font-weight: bold
+
 }
 
 .navbar-brand {
@@ -159,6 +160,11 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
+    
+html > body{
+  font-family: 'Raleway', cursive;
+  font-weight: bold;
+}
     #bio {
       font-size:24px;
       padding-left: 5px;
@@ -213,8 +219,7 @@ margin-left: 5%;
 
 #button {
       clear: right;
-      font-size:45px;
-      padding-bottom: 0px;
+      font-size:25px;
       display: block;
       margin-left: 20%;
       margin: auto;
