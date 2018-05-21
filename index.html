@@ -11,11 +11,42 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee+Shade|Cedarville+Cursive|Codystar|Crafty+Girls|Faster+One|IM+Fell+DW+Pica+SC|Karma|League+Script|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Lora|Montserrat|Raleway+Dots');
 </style>
     <body>
-        
+        <script>
+        var menuOpen = false;
+    window.addEventListener('click', function(e){   
+      console.log(!document.getElementById('nav2').contains(e.target));
+      console.log(menuOpen);
+      if (!document.getElementById('nav2').contains(e.target) && menuOpen || 
+            document.getElementById('nav2').contains(e.target)){
+        menuOpen = false;
+        document.getElementById("nav2").style.visibility= "hidden";
+        document.getElementById("exit").style.display = "none";
+        document.getElementById("button").style.display = "block";
+        var x = document.getElementsByClassName("orig");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+      } else if(document.getElementById('button').contains(e.target)) {
+        menuOpen = true;
+        document.getElementById("nav2").style.visibility= "visible";
+        document.getElementById("exit").style.display ="block";
+        document.getElementById("button").style.display ="none";
+        var x = document.getElementsByClassName("orig");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+        }
+      }
+    });
+</script>
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #FFFFFFF;">
         
-        <a class="navbar-brand" href="index.html">Farzad Bagheri</a>
-        <ul class="nav nav-tabs" role="tablist">
+        <a class="navbar-brand" href="index.html" id="name">Farzad Bagheri</a>
+        <div id="button">&#x2630;</div>
+        <div id="exit">x</div>
+
+        <ul class="nav nav-tabs" role="tablist" id="tabs">
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#proj" role="tab">Projects</a>
           </li>
@@ -29,6 +60,13 @@
             <a class="nav-link" data-toggle="tab" href="#prof" role="tab">About Me</a>
           </li>
         </ul>
+        
+        </nav>
+        <nav id="nav2">
+            <a class="orig" data-toggle="tab" href="#proj">Projects</a>
+            <a class="orig" data-toggle="tab" href="#mus">Music</a>
+            <a class="orig" data-toggle="tab" href="#vid">Video</a>
+            <a class="orig" data-toggle="tab" href="#prof">About Me</a>
         </nav>
         <div class="tab-content">
             <div class="tab-pane fade show active" role="tabpanel">

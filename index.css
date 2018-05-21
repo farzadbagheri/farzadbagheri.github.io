@@ -13,6 +13,10 @@ h3 {
     text-align:center;
 }
 
+#nav2 {
+  text-align: center;
+}
+
 html > body{
   font-family: 'Raleway Dots', cursive;
   font-weight: bold;
@@ -59,6 +63,10 @@ ul {
     text-align: center;
     font-size: 18px;
     margin: 0;
+}
+
+#button {
+    display:none;
 }
 
 .large {
@@ -134,6 +142,9 @@ a.nav-link {
   color: #000000;
 
 }
+#exit {
+    display: none;
+}
 
 footer {
   position: absolute;
@@ -145,21 +156,78 @@ footer {
 }
 
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 600px) {
     #bio {
-      font-size:36px;
+      font-size:24px;
       padding-left: 5px;
       clear: left;
     }
     #selfie {
       float: none;
     }
+    #name {
+      float: left;
+    }
+
+    #mainpic {
+  padding-left: 0%;
+  width: 90%;
+  height: auto;
+  border-radius: 2px;
+}
+    #tabs {
+      display: none;
+    }
     #personal {
       width: 100%;
       padding-left: 35px;
   }
+
+  #project1 {
+  width: 90%;
+margin-left: 5%;
+}
+#project2 {
+  width: 90%;
+  margin-left: 5%;
+}
+.orig {
+      border-top: solid white;
+      border-bottom: solid white;
+      display: none;
+    }
+
+#vids1 li {
+  display: inline-block;
+    padding: 2%;
+    margin: auto;
+}
+
+#button {
+      clear: right;
+      font-size:45px;
+      padding-right: 5px;
+      padding-top: 10px;
+      display: block;
+      margin-left: 50%;
+      margin-top: 0;
+    }
+    #exit {
+      background-color: black;
+      color:white;
+      float: right;
+      font-size:25px;
+      margin-right: 5px;
+      margin-top: 10px;
+      width: 7%;
+      height: 7%;
+      display: none;
+      text-align: center;
+    }
+
+    .navbar-brand {
+  font-family: 'Bungee Shade', cursive;
+  text-align: center;
+}
 }
 
