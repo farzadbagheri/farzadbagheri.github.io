@@ -150,11 +150,11 @@ a.nav-link {
 }
 
 footer {
-  position: absolute;
-    text-align: right;
-    left: 86%;
+  
+    float: right;
     padding-top: 15px;
     padding-bottom: 10px;
+    padding-right: 5%;
     
 }
 
@@ -248,8 +248,10 @@ iframe{
   text-align: center;
 }
 footer {
+  float:none;
   text-align: center;
-  left: 35%;
+  margin-left: auto;
+  margin-right: auto;
 }
 }
 
