@@ -38,6 +38,10 @@ ul {
      padding: 0;
 }
 
+#nav2 {
+  display: none;
+}
+
 
 #vids li {
     display: inline-block;
@@ -204,6 +208,7 @@ margin-left: 5%;
 #nav2 {
   text-align: center;
   visibility: hidden;
+  display: block;
 }
 
 #button {
