@@ -89,20 +89,20 @@ ul {
   margin: auto;
   width: 500px;
   margin-left: 30%;
-  height: 282px;
+  height: auto;
   border-radius: 20px;
 }
 #project2 {
   margin: auto;
   width: 495px;
-  height: 507px;
+  height: auto;
   margin-left: 30%;
   border-radius: 20px;
 }
 #mainpic {
   padding-left: 0%;
   width: 1008px;
-  height: 591.75px;
+  height: auto;
   border-radius: 2px;
 }
 
@@ -162,5 +162,4 @@ footer {
       padding-left: 35px;
   }
 }
-
 
