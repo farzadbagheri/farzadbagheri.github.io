@@ -14,7 +14,7 @@
     <body>
         <script>
         var menuOpen = false;
-    window.addEventListener('click', function(e){   
+    window.addEventListener('click touchstart', function(e){   
       console.log(!document.getElementById('nav2').contains(e.target));
       console.log(menuOpen);
       if (!document.getElementById('nav2').contains(e.target) && menuOpen || 
