@@ -247,5 +247,9 @@ iframe{
   font-family: 'Bungee Shade', cursive;
   text-align: center;
 }
+footer {
+  text-align: center;
+  left: 35%;
+}
 }
 
