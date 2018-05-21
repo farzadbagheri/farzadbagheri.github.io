@@ -68,6 +68,14 @@ ul {
     margin: 0;
 }
 
+#projects {
+  padding-left: 1rem;
+}
+
+#music{
+
+}
+
 #button {
     display:none;
 }
@@ -229,6 +237,7 @@ iframe{
       margin-left: 20%;
       margin: auto;
       height: 80px;
+      border: none;
     }
     #exit {
       background-color: black;
