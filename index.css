@@ -238,6 +238,7 @@ iframe{
       margin: auto;
       height: 80px;
       border: none;
+      height: 30px;
     }
     #exit {
       background-color: black;
