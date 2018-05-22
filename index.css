@@ -238,15 +238,15 @@ iframe{
       margin: auto;
       height: 80px;
       border: none;
-      height: 30px;
+      height: 33px;
     }
     #exit {
       background-color: black;
       color:white;
       float: right;
       font-size:25px;
-      margin-right: 5px;
-      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
       width: 7%;
       height: 7%;
       display: none;
