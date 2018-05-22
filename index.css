@@ -241,13 +241,15 @@ iframe{
       height: 33px;
     }
     #exit {
-      background-color: black;
-      color:white;
+      background-color: white;
+      border:none;
+      color:black;
       float: right;
       font-size:25px;
       margin-left: auto;
       margin-right: auto;
       height: 6%;
+      width:auto;
       display: none;
       text-align: center;
     }
