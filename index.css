@@ -241,7 +241,7 @@ iframe{
       height: 33px;
     }
     #exit {
-      
+      background-color: #f7f7f7;
       border:none;
       color:black;
       float: right;
