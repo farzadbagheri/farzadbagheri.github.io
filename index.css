@@ -1,9 +1,12 @@
-h1{
+h1 {
     color: black;
     text-align:center;
     font-weight: bold;
 }
 
+#project-list {
+    line-height: 40px;
+}
 h3 {
   padding-left: 10px;
   font-weight: bold;
