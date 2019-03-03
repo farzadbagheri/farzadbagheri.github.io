@@ -4,8 +4,8 @@ h1 {
     font-weight: bold;
 }
 
-#project-list {
-    line-height: 40px;
+#project-list > li{
+    margin: 10px;
 }
 h3 {
   padding-left: 10px;
