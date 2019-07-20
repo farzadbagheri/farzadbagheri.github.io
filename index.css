@@ -1,21 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+ * {
+  box-sizing: border-box;
+ }
 h1 {
     color: black;
     text-align:center;
     font-weight: bold;
+
+}
+
+.descriptor {
+  /*color: rgb(156,156,156);
+  color: inherit;*/
+  top: 6px;
+  position: absolute;
+  right: 25px;
+}
+
+#project-list {
+  display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0 0 0;
 }
 
 #project-list > li{
     margin: 10px;
+    width: 25%;
+    display: inline-block;
+    border-color: rgb(247,247,247);
+    border-style: dashed;
+    padding: 32px;
+    border-radius: 25px;
+    position: relative;
+}
+
+#vids1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#vids1 > h2 {
+  width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+    background-color: rgb(247,247,247);
+    border-radius: 14px;
+    padding: 14px;
 }
 h3 {
   padding-left: 10px;
   font-weight: bold;
 }
 .logos {
-    width: 350px;
-    height: auto;
-    margin-left: 50%;
-    transform: translate(-50%, 0%);
+    width: 100%;
+    /* height: auto; */
+    /* margin-left: 50%; */
+    /* transform: translate(-50%, 0%); */
 }
 
 #intro {
@@ -77,9 +124,7 @@ ul {
     margin: 0;
 }
 
-#projects {
-  padding-left: 1rem;
-}
+
 
 #music{
 
@@ -115,16 +160,16 @@ ul {
 
 #project1 {
   margin: auto;
-  width: 500px;
-  margin-left: 30%;
+  width: 100%;
+  /* margin-left: 30%; */
   height: auto;
   border-radius: 20px;
 }
 #project2 {
   margin: auto;
-  width: 495px;
+  width: 100%;
   height: auto;
-  margin-left: 30%;
+  /* margin-left: 30%; */
   border-radius: 20px;
 }
 #mainpic {
@@ -181,6 +226,19 @@ footer {
 html > body{
   font-family: 'Raleway';
   font-weight: bold;
+}
+#project-list > li{
+    
+    width: 100%;
+    
+    margin: 0 0 15px 0;
+}
+
+#project-list {
+  flex-direction: column;
+}
+#project-list {
+  padding: 15px;
 }
     #bio {
       font-size:24px;
