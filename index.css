@@ -227,6 +227,9 @@ html > body{
   font-family: 'Raleway';
   font-weight: bold;
 }
+#bioText {
+  clear: left;
+}
 #vids1 {
   flex-direction: column;
 }
