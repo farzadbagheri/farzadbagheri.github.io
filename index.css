@@ -11,6 +11,10 @@ h1 {
 
 }
 
+.nav-tabs {
+    border-bottom: none;
+}
+
 .nav-tabs .nav-link {
     border: 1px solid transparent;
     border-radius: .25rem;
