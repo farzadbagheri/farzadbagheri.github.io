@@ -11,6 +11,16 @@ h1 {
 
 }
 
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.nav-tabs .nav-link.active {
+    color: #464a4c;
+    background-color: #fff;
+    border-color: #ddd #ddd #ddd;
+}
+
 .descriptor {
   /*color: rgb(156,156,156);
   color: inherit;*/
