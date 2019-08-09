@@ -64,9 +64,8 @@ h1 {
 
 h2 {
   font-size: 2rem;
-    background-color: rgb(247,247,247);
     border-radius: 14px;
-    padding: 14px;
+    padding: 14px 2px 14px 2px;
 }
 h3 {
   padding-left: 10px;
@@ -86,8 +85,8 @@ h3 {
 
 
 html > body{
-  font-family: 'Raleway', cursive;
-  font-weight: bold
+font-family: 'Inconsolata', monospace;
+font-weight: bold
 
 }
 
@@ -152,6 +151,26 @@ ul {
     font-size: 25px;
 }
 
+nav.navbar {
+background: rgb(255,225,151);
+background: linear-gradient(90deg, rgba(255,225,151,1) 4%, rgba(246,164,73,1) 55%, rgba(231,88,50,1) 100%);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    -webkit-box-shadow: 0px 4px 3px -5px black;
+     -moz-box-shadow: 0px 4px 3px -5px black;
+          box-shadow: 0px 4px 3px -5px black;
+}
+
+.nav-link.active {
+  background-color: rgb(255,255,255, 0.1) !important;
+  color: black !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+}
+
 .navbar .navbar-nav{
   font-size: 25px;
   padding-left: 71px;
@@ -204,7 +223,6 @@ p {
 }
 #personal {
   width: 850px;
-  background-color: #d3d3d3;
   border-radius: 10px;
   padding-bottom: 10px;
   margin-right: auto;
@@ -235,14 +253,22 @@ footer {
 }
 
 
-@media only screen and (max-width: 768px) {
-    
-html > body{
-  font-family: 'Raleway';
-  font-weight: bold;
+@media only screen and (max-width: 1028px) {
+  #project-list > li {
+    padding: 32px 16px 32px 16px;
+  }
 }
+
+@media only screen and (max-width: 768px) {
+    nav.nav-bar {
+background: rgb(255,225,151);
+background: linear-gradient(90deg, rgba(255,225,151,1) 4%, rgba(246,164,73,1) 90%, rgba(231,88,50,1) 100%);
+    }
 #bioText {
   clear: left;
+}
+p {
+  padding-right: 0px;
 }
 #vids1 {
   flex-direction: column;
@@ -261,11 +287,13 @@ html > body{
   padding: 15px;
 }
     #bio {
-      font-size:24px;
      float: none;
     }
     #selfie {
       float: none;
+      width: 120px;
+      height: auto;
+      border-radius: 22px;
     }
     #name {
       float: left;
@@ -281,8 +309,9 @@ html > body{
       display: none;
     }
     #personal {
-      width: 100%;
-      padding-left: 35px;
+      width: 80%;
+      margin: auto;
+          font-size: 16px;
   }
 
   #project1 {
@@ -314,6 +343,10 @@ iframe{
   text-align: center;
   visibility: hidden;
   display: block;
+     position: sticky;
+    top: 125px;
+    z-index: 1;
+    background: white;
 }
 
 #button {
@@ -325,9 +358,10 @@ iframe{
       height: 80px;
       border: none;
       height: 33px;
+      background: transparent;
     }
     #exit {
-      background-color: #f7f7f7;
+      background: transparent;
       border:none;
       color:black;
       float: right;
@@ -338,6 +372,7 @@ iframe{
       width:auto;
       display: none;
       text-align: center;
+
     }
 
     .navbar-brand {
