@@ -345,6 +345,7 @@ iframe{
   visibility: hidden;
   display: block;
      position: sticky;
+  position: -webkit-sticky;
     top: 125px;
     z-index: 1;
     background: white;
