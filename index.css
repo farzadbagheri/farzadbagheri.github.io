@@ -152,8 +152,7 @@ ul {
 }
 
 nav.navbar {
-background: rgb(255,225,151);
-background: linear-gradient(90deg, rgba(255,225,151,1) 4%, rgba(246,164,73,1) 55%, rgba(231,88,50,1) 100%);
+background-color: #f0faff;
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
