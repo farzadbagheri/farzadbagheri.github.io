@@ -179,10 +179,18 @@ nav.navbar {
   margin-top: 20px;
 }
 
-.project-img {
+#project1 {
+  margin: auto;
+  width: 100%;
+  /* margin-left: 30%; */
+  height: auto;
+  border-radius: 20px;
+}
+#project2 {
   margin: auto;
   width: 100%;
   height: auto;
+  /* margin-left: 30%; */
   border-radius: 20px;
 }
 #mainpic {
@@ -294,7 +302,11 @@ footer {
     font-size: 16px;
   }
 
-  .project-img {
+  #project1 {
+    width: 90%;
+    margin-left: 5%;
+  }
+  #project2 {
     width: 90%;
     margin-left: 5%;
   }
@@ -302,13 +314,6 @@ footer {
     border-top: solid white;
     border-bottom: solid white;
     display: none;
-    color: #000000;
-    padding: 12px 0;
-    font-family: "Doto", sans-serif;
-    font-size: 22px;
-  }
-  #nav2.open .orig {
-    display: block;
   }
   iframe {
     width: 90%;
@@ -331,9 +336,6 @@ footer {
     top: 125px;
     z-index: 1;
     background: white;
-  }
-  #nav2.open {
-    visibility: visible;
   }
 
   #button {
