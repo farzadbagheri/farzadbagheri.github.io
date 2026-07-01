@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farzad Bagheri</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -9,56 +12,45 @@
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
       crossorigin="anonymous"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Crimson+Pro|Inconsolata|Libre+Caslon+Text|Questrial&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee+Shade|Cedarville+Cursive|Codystar|Crafty+Girls|Faster+One|IM+Fell+DW+Pica+SC|Karma|League+Script|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Lora|Montserrat|Raleway+Dots|Raleway");
+      @import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap");
+    </style>
   </head>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <style>
-    @import url("https://fonts.googleapis.com/css?family=Crimson+Pro|Inconsolata|Libre+Caslon+Text|Questrial&display=swap");
-    @import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee+Shade|Cedarville+Cursive|Codystar|Crafty+Girls|Faster+One|IM+Fell+DW+Pica+SC|Karma|League+Script|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Lora|Montserrat|Raleway+Dots|Raleway");
-    @import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap");
-  </style>
   <body>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById(
-          "footer-copy"
-        ).innerHTML = `&copy; Farzad Bagheri ${new Date().getFullYear()}`;
+        const footer = document.getElementById("footer-copy");
+        const openBtn = document.getElementById("button");
+        const exitBtn = document.getElementById("exit");
+        const nav2 = document.getElementById("nav2");
 
-        var menuOpen = false;
-        window.addEventListener("click", function (e) {
-          if (
-            (!document.getElementById("nav2").contains(e.target) && menuOpen) ||
-            document.getElementById("nav2").contains(e.target)
-          ) {
-            menuOpen = false;
-            document.getElementById("nav2").style.visibility = "hidden";
-            document.getElementById("exit").style.display = "none";
-            document.getElementById("button").style.display = "block";
-            var x = document.getElementsByClassName("orig");
-            var i;
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-          } else if (document.getElementById("button").contains(e.target)) {
-            menuOpen = true;
-            document.getElementById("nav2").style.visibility = "visible";
-            document.getElementById("exit").style.display = "block";
-            document.getElementById("button").style.display = "none";
-            var x = document.getElementsByClassName("orig");
-            var i;
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "block";
-            }
-          }
-        });
+        footer.innerHTML = `&copy; Farzad Bagheri ${new Date().getFullYear()}`;
+
+        const origLinks = nav2.querySelectorAll(".orig");
+
+        const setMenu = (open) => {
+          nav2.classList.toggle("open", open);
+          openBtn.style.display = open ? "none" : "block";
+          exitBtn.style.display = open ? "block" : "none";
+          origLinks.forEach((link) => {
+            link.style.display = open ? "block" : "none";
+          });
+        };
+
+        openBtn.addEventListener("click", () => setMenu(true));
+        exitBtn.addEventListener("click", () => setMenu(false));
+
+        nav2.addEventListener("click", () => setMenu(false));
       });
     </script>
     <nav
       class="navbar navbar-toggleable-md navbar-light bg-faded"
-      style="background-color: #FFFFFFF"
     >
       <a class="navbar-brand" href="index.html" id="name">Farzad Bagheri</a>
-      <button id="button">&#x2630;</button>
-      <button id="exit">&#x2715;</button>
+      <button id="button" aria-label="Open menu">&#x2630;</button>
+      <button id="exit" aria-label="Close menu">&#x2715;</button>
 
       <ul class="nav nav-tabs" role="tablist" id="tabs">
         <li class="nav-item">
@@ -93,7 +85,7 @@
           <img
             id="mainpic"
             src="./assets/main2.jpg"
-            hspace="20px"
+
             alt="mountain silhouette from rattlesnake ledge at sunrise"
           />
 
@@ -106,8 +98,8 @@
             <img
               id="selfie"
               src="./assets/selfpic.png"
-              hspace="20px"
-              alt="a photo of farzad bagheri"
+
+              alt="a photo of Farzad Bagheri"
             />
             <p id="bioText">
               I'm a developer and designer with a passion for human-computer
@@ -123,8 +115,8 @@
             <li>
               <a
                 class="descriptor"
-                target="_blank"
-                href="https://github.com/farzadbagheri/cpu-load-monitor"
+                target="_blank" rel="noopener"
+                href="https://github.com/name/cpu-load-monitor"
                 >code</a
               >
               <h2><b>CPU Load Monitor</b></h2>
@@ -132,27 +124,27 @@
                 Web app that monitors CPU load and alert + log high CPU load
                 occurrences and recoveries
               </p>
-              <img id="project1" src="./assets/loadmonitor.png" />
+              <img class="project-img" src="./assets/loadmonitor.png" />
             </li>
             <li>
               <a
                 class="descriptor"
-                target="_blank"
-                href="https://github.com/farzadbagheri/useyourhead"
+                target="_blank" rel="noopener"
+                href="https://github.com/name/useyourhead"
                 >code</a
               >
               <h2>
-                <a target="_blank" href="/useyourhead"><b>Use Your Head</b> </a>
+                <a target="_blank" rel="noopener" href="/useyourhead"><b>Use Your Head</b> </a>
               </h2>
               <p class="info">
                 A simple game using clmtrackr.js facial tracking library
               </p>
-              <img id="project1" src="./assets/useyourhead.png" />
+              <img class="project-img" src="./assets/useyourhead.png" />
             </li>
             <li>
               <a
                 class="descriptor"
-                target="_blank"
+                target="_blank" rel="noopener"
                 href="assets/gener8report.pdf"
               >
                 redesign + report</a
@@ -161,21 +153,21 @@
               <p class="info">
                 A UX assessment + redesign of a local company website
               </p>
-              <img id="project1" src="./assets/gener8pic.png" />
+              <img class="project-img" src="./assets/gener8pic.png" />
             </li>
 
             <li>
               <a
                 class="descriptor"
-                target="_blank"
-                href="https://github.com/farzadbagheri/weatherfinder"
+                target="_blank" rel="noopener"
+                href="https://github.com/name/weatherfinder"
               >
                 code</a
               >
               <h2>
                 <b
                   ><a
-                    target="_blank"
+                    target="_blank" rel="noopener"
                     href="https://farzadbagheri.github.io/weatherfinder"
                     >Weather Finder</a
                   ></b
@@ -185,7 +177,7 @@
                 a simple ReactJS component that uses weather.org api to find
                 weather in different zip codes
               </p>
-              <img id="project2" src="./assets/weatherclip.png" />
+              <img class="project-img" src="./assets/weatherclip.png" />
             </li>
           </ul>
         </div>
@@ -198,8 +190,8 @@
               <iframe
                 width="115%"
                 height="380"
-                scrolling="no"
-                frameborder="no"
+
+
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/312081362&amp;color=%23829bba&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
               ></iframe>
             </li>
@@ -209,7 +201,7 @@
                 src="https://open.spotify.com/embed?uri=spotify:track:2fNSwM4ZwOEtxjTxmYq08m&view=coverart&theme=white"
                 width="350"
                 height="380"
-                frameborder="0"
+
               ></iframe>
             </li>
           </ul>
