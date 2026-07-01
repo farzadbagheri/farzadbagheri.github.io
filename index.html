@@ -15,35 +15,38 @@
         </style>
     <body>
         <script>
-        document.getElementById('footer-copy').innerHTML = `&copy; Farzad Bagheri ${new Date().getFullYear()}`;
-
-        var menuOpen = false;
-    window.addEventListener('click', function(e){   
-    
-      if (!document.getElementById('nav2').contains(e.target) && menuOpen || 
-            document.getElementById('nav2').contains(e.target)){
-        menuOpen = false;
-        document.getElementById("nav2").style.visibility= "hidden";
-        document.getElementById("exit").style.display = "none";
-        document.getElementById("button").style.display = "block";
-        var x = document.getElementsByClassName("orig");
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-      } else if(document.getElementById('button').contains(e.target)) {
-        menuOpen = true;
-        document.getElementById("nav2").style.visibility= "visible";
-        document.getElementById("exit").style.display ="block";
-        document.getElementById("button").style.display ="none";
-        var x = document.getElementsByClassName("orig");
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "block";
-        }
-      }
-    });
-</script>
+          document.addEventListener('DOMContentLoaded', () => {
+              document.getElementById('footer-copy').innerHTML = `&copy; Farzad Bagheri ${new Date().getFullYear()}`;
+            
+              var menuOpen = false;
+              window.addEventListener('click', function (e) {
+                if (
+                  (!document.getElementById('nav2').contains(e.target) && menuOpen) ||
+                  document.getElementById('nav2').contains(e.target)
+                ) {
+                  menuOpen = false;
+                  document.getElementById('nav2').style.visibility = 'hidden';
+                  document.getElementById('exit').style.display = 'none';
+                  document.getElementById('button').style.display = 'block';
+                  var x = document.getElementsByClassName('orig');
+                  var i;
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = 'none';
+                  }
+                } else if (document.getElementById('button').contains(e.target)) {
+                  menuOpen = true;
+                  document.getElementById('nav2').style.visibility = 'visible';
+                  document.getElementById('exit').style.display = 'block';
+                  document.getElementById('button').style.display = 'none';
+                  var x = document.getElementsByClassName('orig');
+                  var i;
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = 'block';
+                  }
+                }
+              });
+            });
+        </script>
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #FFFFFFF;">
         
         <a class="navbar-brand" href="index.html" id="name">Farzad Bagheri</a>
