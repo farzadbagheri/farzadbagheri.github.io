@@ -1,139 +1,237 @@
 <html>
-<head>
-    <title>
-        Farzad Bagheri
-    </title>
-            <link rel="stylesheet" type="text/css" href="index.css">
-            <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        </head> 
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <style>
-@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Inconsolata|Libre+Caslon+Text|Questrial&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee+Shade|Cedarville+Cursive|Codystar|Crafty+Girls|Faster+One|IM+Fell+DW+Pica+SC|Karma|League+Script|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Lora|Montserrat|Raleway+Dots|Raleway');
-@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
-        </style>
-    <body>
-        <script>
-          document.addEventListener('DOMContentLoaded', () => {
-              document.getElementById('footer-copy').innerHTML = `&copy; Farzad Bagheri ${new Date().getFullYear()}`;
-            
-              var menuOpen = false;
-              window.addEventListener('click', function (e) {
-                if (
-                  (!document.getElementById('nav2').contains(e.target) && menuOpen) ||
-                  document.getElementById('nav2').contains(e.target)
-                ) {
-                  menuOpen = false;
-                  document.getElementById('nav2').style.visibility = 'hidden';
-                  document.getElementById('exit').style.display = 'none';
-                  document.getElementById('button').style.display = 'block';
-                  var x = document.getElementsByClassName('orig');
-                  var i;
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = 'none';
-                  }
-                } else if (document.getElementById('button').contains(e.target)) {
-                  menuOpen = true;
-                  document.getElementById('nav2').style.visibility = 'visible';
-                  document.getElementById('exit').style.display = 'block';
-                  document.getElementById('button').style.display = 'none';
-                  var x = document.getElementsByClassName('orig');
-                  var i;
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = 'block';
-                  }
-                }
-              });
-            });
-        </script>
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #FFFFFFF;">
-        
-        <a class="navbar-brand" href="index.html" id="name">Farzad Bagheri</a>
-        <button id="button">&#x2630;</button>
-        <button id="exit">&#x2715;</button>
+  <head>
+    <title>Farzad Bagheri</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Crimson+Pro|Inconsolata|Libre+Caslon+Text|Questrial&display=swap");
+    @import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee+Shade|Cedarville+Cursive|Codystar|Crafty+Girls|Faster+One|IM+Fell+DW+Pica+SC|Karma|League+Script|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Lora|Montserrat|Raleway+Dots|Raleway");
+    @import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap");
+  </style>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById(
+          "footer-copy"
+        ).innerHTML = `&copy; Farzad Bagheri ${new Date().getFullYear()}`;
 
-        <ul class="nav nav-tabs" role="tablist" id="tabs">
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#proj" role="tab">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#mus" role="tab" id="musicfont">Music</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#prof" role="tab">About</a>
-          </li>
-        </ul>
-        
-        </nav>
-        <nav id="nav2">
-            <a class="orig" data-toggle="tab" href="#proj">Work</a>
-            <a class="orig" data-toggle="tab" href="#mus">Music</a>
-            <a class="orig" data-toggle="tab" href="#prof">About</a>
-        </nav>
-        <div class="tab-content">
-            <div class="tab-pane fade show active" role="tabpanel">
-                <div id="main2">
-                    <br />
-                    <img id="mainpic" src="./assets/main2.jpg" hspace="20px" alt="mountain silhouette from rattlesnake ledge at sunrise" />
-                    
-                   <div id="">
+        var menuOpen = false;
+        window.addEventListener("click", function (e) {
+          if (
+            (!document.getElementById("nav2").contains(e.target) && menuOpen) ||
+            document.getElementById("nav2").contains(e.target)
+          ) {
+            menuOpen = false;
+            document.getElementById("nav2").style.visibility = "hidden";
+            document.getElementById("exit").style.display = "none";
+            document.getElementById("button").style.display = "block";
+            var x = document.getElementsByClassName("orig");
+            var i;
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+          } else if (document.getElementById("button").contains(e.target)) {
+            menuOpen = true;
+            document.getElementById("nav2").style.visibility = "visible";
+            document.getElementById("exit").style.display = "block";
+            document.getElementById("button").style.display = "none";
+            var x = document.getElementsByClassName("orig");
+            var i;
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "block";
+            }
+          }
+        });
+      });
+    </script>
+    <nav
+      class="navbar navbar-toggleable-md navbar-light bg-faded"
+      style="background-color: #FFFFFFF"
+    >
+      <a class="navbar-brand" href="index.html" id="name">Farzad Bagheri</a>
+      <button id="button">&#x2630;</button>
+      <button id="exit">&#x2715;</button>
 
-                  
-                </div>
-                </div>
-            </div>
-             <div class="tab-pane fade" id="prof" role="tabpanel">
-                <div id="bio">
-                   <div id="personal">
-                    <img id="selfie" src="./assets/selfpic.png" hspace="20px" alt="a photo of farzad bagheri" />
-                    <p id='bioText'> I'm a developer and designer with a passion for human-computer interaction and a hunger to learn every day. I'm currently working as a UI Engineer. </p>
-                </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="proj" role="tabpanel">
-                <div id="projects">
- 
-                    <ul id='project-list'>
-                        <li> <a class='descriptor' target="_blank" href="https://github.com/farzadbagheri/cpu-load-monitor">code</a>
-                              <h2><b>CPU Load Monitor</b></h2>
-                             <p class="info">Web app that monitors CPU load and alert + log high CPU load occurrences and recoveries</p>
-                            <img id="project1" src='./assets/loadmonitor.png'/>
-                        </li>
-                         <li> <a class='descriptor' target="_blank" href="https://github.com/farzadbagheri/useyourhead">code</a>
-                              <h2><a target="_blank" href='/useyourhead'><b>Use Your Head</b> </a> </h2>
-                             <p class="info">A simple game using clmtrackr.js facial tracking library</p>
-                            <img id="project1" src='./assets/useyourhead.png'/>
-                        </li>
-                        <li> <a class='descriptor' target="_blank" href="assets/gener8report.pdf">  redesign + report</a>
-                            <h2><b>Gener8.net</b>  </h2>
-                             <p class="info">A UX assessment + redesign of a local company website</p>
-                            <img id="project1" src='./assets/gener8pic.png'/>
-                        </li>
-                      
-                        <li><a  class='descriptor' target="_blank" href="https://github.com/farzadbagheri/weatherfinder"> code</a>
-                            <h2><b><a target="_blank" href= "https://farzadbagheri.github.io/weatherfinder">Weather Finder</a></b> </h2>
-                             <p class="info">a simple ReactJS component that uses weather.org api to find weather in different zip codes</p>
-                            <img id="project2" src='./assets/weatherclip.png'/>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="mus" role="tabpanel">
-                <div id="music">
-                    <ul id="vids1">   
-                        <li><h2>Star by Me</h2><iframe width="115%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/312081362&amp;color=%23829bba&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe></li>
-                        <li><h2>San Jose by Riley McShane</h2><iframe src="https://open.spotify.com/embed?uri=spotify:track:2fNSwM4ZwOEtxjTxmYq08m&view=coverart&theme=white" width="350" height="380" frameborder="0"></iframe> </li>
-                    </ul>
-                </div>
-            </div>
+      <ul class="nav nav-tabs" role="tablist" id="tabs">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#proj" role="tab">Work</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-toggle="tab"
+            href="#mus"
+            role="tab"
+            id="musicfont"
+            >Music</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#prof" role="tab"
+            >About</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <nav id="nav2">
+      <a class="orig" data-toggle="tab" href="#proj">Work</a>
+      <a class="orig" data-toggle="tab" href="#mus">Music</a>
+      <a class="orig" data-toggle="tab" href="#prof">About</a>
+    </nav>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" role="tabpanel">
+        <div id="main2">
+          <br />
+          <img
+            id="mainpic"
+            src="./assets/main2.jpg"
+            hspace="20px"
+            alt="mountain silhouette from rattlesnake ledge at sunrise"
+          />
+
+          <div id=""></div>
         </div>
-        
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <footer id="footer-copy">
-        </footer>
-    </body>
+      </div>
+      <div class="tab-pane fade" id="prof" role="tabpanel">
+        <div id="bio">
+          <div id="personal">
+            <img
+              id="selfie"
+              src="./assets/selfpic.png"
+              hspace="20px"
+              alt="a photo of farzad bagheri"
+            />
+            <p id="bioText">
+              I'm a developer and designer with a passion for human-computer
+              interaction and a hunger to learn every day. I'm currently working
+              as a UI Engineer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="proj" role="tabpanel">
+        <div id="projects">
+          <ul id="project-list">
+            <li>
+              <a
+                class="descriptor"
+                target="_blank"
+                href="https://github.com/farzadbagheri/cpu-load-monitor"
+                >code</a
+              >
+              <h2><b>CPU Load Monitor</b></h2>
+              <p class="info">
+                Web app that monitors CPU load and alert + log high CPU load
+                occurrences and recoveries
+              </p>
+              <img id="project1" src="./assets/loadmonitor.png" />
+            </li>
+            <li>
+              <a
+                class="descriptor"
+                target="_blank"
+                href="https://github.com/farzadbagheri/useyourhead"
+                >code</a
+              >
+              <h2>
+                <a target="_blank" href="/useyourhead"><b>Use Your Head</b> </a>
+              </h2>
+              <p class="info">
+                A simple game using clmtrackr.js facial tracking library
+              </p>
+              <img id="project1" src="./assets/useyourhead.png" />
+            </li>
+            <li>
+              <a
+                class="descriptor"
+                target="_blank"
+                href="assets/gener8report.pdf"
+              >
+                redesign + report</a
+              >
+              <h2><b>Gener8.net</b></h2>
+              <p class="info">
+                A UX assessment + redesign of a local company website
+              </p>
+              <img id="project1" src="./assets/gener8pic.png" />
+            </li>
+
+            <li>
+              <a
+                class="descriptor"
+                target="_blank"
+                href="https://github.com/farzadbagheri/weatherfinder"
+              >
+                code</a
+              >
+              <h2>
+                <b
+                  ><a
+                    target="_blank"
+                    href="https://farzadbagheri.github.io/weatherfinder"
+                    >Weather Finder</a
+                  ></b
+                >
+              </h2>
+              <p class="info">
+                a simple ReactJS component that uses weather.org api to find
+                weather in different zip codes
+              </p>
+              <img id="project2" src="./assets/weatherclip.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="mus" role="tabpanel">
+        <div id="music">
+          <ul id="vids1">
+            <li>
+              <h2>Star by Me</h2>
+              <iframe
+                width="115%"
+                height="380"
+                scrolling="no"
+                frameborder="no"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/312081362&amp;color=%23829bba&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
+              ></iframe>
+            </li>
+            <li>
+              <h2>San Jose by Riley McShane</h2>
+              <iframe
+                src="https://open.spotify.com/embed?uri=spotify:track:2fNSwM4ZwOEtxjTxmYq08m&view=coverart&theme=white"
+                width="350"
+                height="380"
+                frameborder="0"
+              ></iframe>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <footer id="footer-copy"></footer>
+  </body>
 </html>
