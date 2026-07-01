@@ -91,7 +91,7 @@ font-weight: bold
 }
 
 .navbar-brand {
-  font-family: 'Bungee Shade', cursive;
+   font-family: 'Doto', sans-serif;
 }
 
 div > h3 {
@@ -127,7 +127,7 @@ ul {
 .nav-tabs > li {
     font-size: 22px;
     padding-left: 40px;
-    font-family: 'Bungee Outline', cursive;
+    font-family: 'Doto', sans-serif;
     color: black;
 }
 
